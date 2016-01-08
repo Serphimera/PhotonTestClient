@@ -1,0 +1,20 @@
+﻿<Window x:Class="PhotonTestClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotonTestClient"
+        mc:Ignorable="d"
+        Title="Photon Test Client V0.1" Height="500" Width="1000" WindowStartupLocation="CenterScreen" Background="#FFC1C1C1" SnapsToDevicePixels="True">
+    <Grid>
+        <Label x:Name="IPAddressLabel" Content="IP-Address" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="IPAddress" HorizontalAlignment="Left" Height="23" Margin="90,13,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="75" Click="ConnectButton_OnClick"/>
+        <Button x:Name="DisconnectButton" Content="Disconnect" HorizontalAlignment="Left" Margin="155,41,0,0" VerticalAlignment="Top" Width="75" Click="DisconnectButton_OnClick"/>
+        <TextBox x:Name="StatusTextBox" HorizontalAlignment="Left" Height="446" Margin="329,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="653"/>
+        <Label x:Name="StatusLable" Content="Status" HorizontalAlignment="Left" Margin="10,433,0,0" VerticalAlignment="Top" Width="75"/>
+        <Ellipse x:Name="StatusIndicator" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="65,439,0,0" Stroke="Black" VerticalAlignment="Top" Width="20"/>
+
+
+    </Grid>
+</Window>
